@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="panda" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Global arg to drive mock hardware path -->
+  <xacro:arg name="use_mock_hw" default="false" />
+
+  <xacro:include filename="$(find panda_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/arm.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/sensors.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/gazebo.xacro" />
+  <xacro:include filename="$(find panda_description)/urdf/ros2control.xacro" />
+    
+</robot>
